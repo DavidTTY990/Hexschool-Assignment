@@ -1,0 +1,24 @@
+.red {
+    color: red;
+}
+
+.midori {
+    color: green;
+}
+
+.addressList {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 500px;
+    justify-content: center;
+    display: flex;
+    background: green;
+}
+
+.cityList, .districtList {
+    margin-left: 3px;
+}
+
+.txt , .value {
+    width: 300px;
+}
