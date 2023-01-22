@@ -1,22 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-   <div>
-    <input type="button" value="你就點點看呀" class="btn">
-    <h1>新的一年，祝大家...</h1>
-   </div> 
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <input type="button" value="你就點點看呀" class="btn" />
+      <h1>新的一年，祝大家...</h1>
+    </div>
 
-   <div>
-    
-   </div>
+    <!--  試著用 JS 直接實作 地址輸入器 START  -->
+    <div class="addressSelector">
+      <p>
+        縣市<select class="cityList">
+          <option value="請選擇縣市">請選擇縣市</option>
+          <option value="基隆市">基隆市</option>
+          <option value="台北市">台北市</option>
+          <option value="新北市">新北市</option>
+          <option value="桃園市">桃園市</option>
+          <option value="新竹市">新竹市</option>
+          <option value="新竹縣">新竹縣</option>
+        </select>
+      </p>
+     <p>
+        鄉鎮[市]區<select class="districtList">
+            <option class="notSelectedYet" value="請選擇區域">請選擇區域</option>
+            <option class="基隆市" value="1">1</option>
+            <option class="基隆市" value="2">2</option>
+            <option class="基隆市" value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+        </select>
+     </p> 
+    </div>
+    <!-- 試著用 JS 直接實作地址輸入器 END  -->
     <script src="event.js"></script>
-</body>
+  </body>
 </html>
-
