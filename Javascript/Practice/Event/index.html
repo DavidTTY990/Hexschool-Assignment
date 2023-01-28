@@ -9,12 +9,18 @@
   </head>
   <body>
     <div>
-      <input type="button" value="你就點點看呀" class="btn" />
+      <input type="button" value="你就點點看呀" class="btn">
       <h1>新的一年，祝大家...</h1>
     </div>
 
-    <!--  試著用 JS 直接實作 地址輸入器 START  -->
-    <div class="addressSelector">
+    <!-- 加減法器測試 -->
+      <input type="button" value="Press 2 add" class="add-btn">
+      <input type="button" value="Press 2 minus" class="minus-btn">
+      <h1 class="result">0</h1>
+
+
+     <!-- 試著用 JS 直接實作 地址輸入器 START -->
+   <div class="addressSelector">
       <p>
         縣市<select class="cityList">
           <option value="請選擇縣市">請選擇縣市</option>
@@ -25,13 +31,11 @@
           <option value="新竹市">新竹市</option>
           <option value="新竹縣">新竹縣</option>
         </select>
-      </p>
-     <p>
         鄉鎮[市]區<select class="districtList">
-            <option class="notSelectedYet" value="請選擇區域">請選擇區域</option>
-            <option class="基隆市" value="1">1</option>
-            <option class="基隆市" value="2">2</option>
-            <option class="基隆市" value="3">3</option>
+            <option value="請選擇區域">請選擇區域</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
             <option value="6">6</option>
@@ -47,6 +51,14 @@
             <option value="16">16</option>
             <option value="17">17</option>
             <option value="18">18</option>
+        </select>
+        路（街名）或鄉里名稱<input type="text" class="street">
+        路段<select class="road-sector">
+          <option value="all-road-sector">所有路段</option>
+          <option value="none-road-sector">沒有路段</option> 
+          <option value="road-sector-1">一路</option>
+          <option value="road-sector-2">二路</option>
+          <option value="road-sector-3">三路</option>
         </select>
      </p> 
     </div>
