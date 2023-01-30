@@ -9,21 +9,37 @@
   </head>
   <body>
     <div>
-      <input type="button" value="你就點點看呀" class="btn">
+      <input type="button" value="你就點點看呀" class="btn" />
       <h1>新的一年，祝大家...</h1>
     </div>
 
-    <!-- 加減法器測試 -->
-      <input type="button" value="Press 2 add" class="add-btn">
-      <input type="button" value="Press 2 minus" class="minus-btn">
-      <h1 class="result">0</h1>
+    <!-- 加減法器ui -->
+    <input type="button" value="Press 2 add" class="add-btn" />
+    <input type="button" value="Press 2 minus" class="minus-btn" />
+    <h1 class="result">0</h1>
 
+    <!-- DOM e.target 取值練習 -->
+    <div class="wrap">
+      <div class="first-btn">
+        <input type="button" value="第一個按鈕" />
+      </div>
+      <div class="second-btn">
+        <input type="button" value="第二個按鈕" />
+      </div>
+      <div class="third-btn">
+        <input type="button" value="第三個按鈕" />
+      </div>
+    </div>
 
-     <!-- 試著用 JS 直接實作 地址輸入器 START -->
-   <div class="addressSelector">
+    <div class="targetResult">
+      <h1>按鈕的結果</h1>
+    </div>
+
+    <!-- 試著用 JS 直接實作 地址輸入器 START -->
+    <div class="addressSelector">
       <p>
         縣市<select class="cityList">
-          <option value="請選擇縣市">請選擇縣市</option>
+          <option value="請選擇都市">請選擇都市</option>
           <option value="基隆市">基隆市</option>
           <option value="台北市">台北市</option>
           <option value="新北市">新北市</option>
@@ -32,35 +48,36 @@
           <option value="新竹縣">新竹縣</option>
         </select>
         鄉鎮[市]區<select class="districtList">
-            <option value="請選擇區域">請選擇區域</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
+          <option value="請選擇區域">請選擇區域</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
         </select>
-        路（街名）或鄉里名稱<input type="text" class="street">
-        路段<select class="road-sector">
+        路（街名）或鄉里名稱<input type="text" class="street" /> 路段<select
+          class="road-sector"
+        >
           <option value="all-road-sector">所有路段</option>
-          <option value="none-road-sector">沒有路段</option> 
+          <option value="none-road-sector">沒有路段</option>
           <option value="road-sector-1">一路</option>
           <option value="road-sector-2">二路</option>
           <option value="road-sector-3">三路</option>
         </select>
-     </p> 
+      </p>
     </div>
     <!-- 試著用 JS 直接實作地址輸入器 END  -->
     <script src="event.js"></script>

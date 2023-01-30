@@ -1,0 +1,18 @@
+.wrap {
+    width: 500px;
+    outline: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px 50px 0px;
+  }
+  .first-btn,
+  .second-btn,
+  .third-btn {
+    margin: 50px 0px 50px 0px;
+  }
+  
+  .targetResult {
+    width: 160px;
+    margin-left: 170px;
+    outline: 2px solid red;
+  }
