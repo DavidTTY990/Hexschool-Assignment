@@ -12,7 +12,7 @@ axios
     renderData();
   })
   .catch(function (error) {
-    //如果 get 的 request 沒有成功收到 response ，則執行 catch 的動作
+    //如果 get 的 request 如果收到的 response 為 false ，則執行 catch 的動作
     console.log(error);
     alert(error.message);
   });
@@ -32,37 +32,45 @@ console.log(ary); //[] <- 因為 AJAX 的非同步特性，在第 6 行 Axios �
 //     })
 
 // 以 axios 發出 post 請求申請帳號密碼
-
+// 測試註冊 (六角 api 每 12 小時會清除一次帳密紀錄)
 let obj = {
-  email: "tsaitingyudavid@gmail.com",
-  password: "12345678",
+  email: "js850688@gmail.com",
+  password: "12345678"
 };
 
-axios
-  .post("https://hex-escape-room.herokuapp.com/api/user/signup", obj)
+axios.post("https://hex-escape-room.herokuapp.com/api/user/signup", obj)
   .then(function (response) {
     console.log(response);
   })
   .catch(function (error) {
     console.log(error);
+    alert(error.message);
   });
 
-let testSignup1 = {
-  email: "roger911@gmail.com",
-  password: "12345",
-};
+  //測試登入
+  let objSignin = {
+    email: "js850688@gmail.com",
+    password: "12345678"
+  }
 
-function callSignin() {
-  let testSignup1 = {
-    email: "roger911@gmail.com",
-    password: "12345",
-  };
-
-  axios.post("https://hex-escape-room.herokuapp.com/api/user/signin", testSignup1)
-    .then(function (response) {
+  axios.post("https://hex-escape-room.herokuapp.com/api/user/signin", objSignin)
+    .then(function(response) {
       console.log(response);
     })
-    .catch(function (error) {
+    .catch(function(error) {
       console.log(error);
-    });
-}
+      alert(error.message)
+    })
+
+  //測試登入失敗的情況
+  axios.post("https://hex-escape-room.herokuapp.com/api/user/signin", {
+    email: "etrac8688@gmail.com",
+    password: "123445"
+  })
+   .then(function(response) {
+     console.log(response);
+   })
+   .catch(function(error) {
+    console.log(error);
+    alert(error.message)
+   })

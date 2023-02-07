@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="info-input">
-        帳號：
-        <input type="text" placeholder="請輸入帳號">
-        <br>
-        密碼：
-        <input type="text" placeholder="請輸入密碼">
-        <br>
+      帳號：
+      <input type="email" placeholder="請輸入帳號" class="account" />
+      <br />
+      密碼：
+      <input type="password" placeholder="請輸入密碼" class="password" />
+      <br />
+      <input type="checkbox" onclick="showPassword()" />顯示密碼
     </div>
-    <div class="submit">
-        <input type="submit" value="送出">
+    <div class="btn1">
+      <input type="submit" value="註冊" class="signupBtn" />
     </div>
+    <div class="btn2">
+      <input type="submit" value="登入" class="signinBtn" />
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="all.js"></script>
-</body>
+  </body>
 </html>
